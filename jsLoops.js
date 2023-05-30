@@ -11,3 +11,8 @@ for (let i = 1; i <=5 ; i++) {
      console.log("Hello World");
 }
 
+//the for in loop is used to loop through properties of an array object
+const fruits = ["apple", "banana", "cherry", "strawberry"];
+for(x in fruits){
+     console.log(fruits[x]);
+}
