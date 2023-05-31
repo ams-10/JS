@@ -16,3 +16,5 @@ for (let x of myArray){
      if(x === "mango" || x === "cherry"){continue;}
      else{console.log(x);}
 }
+
+//the break and continue statements are the only statements which can be used to jump out of a code block
