@@ -16,3 +16,12 @@ const fruits = ["apple", "banana", "cherry", "strawberry"];
 for(x in fruits){
      console.log(fruits[x]);
 }
+
+//the for of loop is used to loop through the values of an iterable object
+//example
+const cars = ["volvo", "ford", "pontiac"];
+txt = ""
+for(let x of cars){
+     txt+=x+"\n";
+}
+console.log(txt);
