@@ -21,7 +21,22 @@ for(x in fruits){
 //example
 const cars = ["volvo", "ford", "pontiac"];
 txt = ""
-for(let x of cars){
+for(var x of cars){
      txt+=x+"\n";
 }
 console.log(txt);
+
+//whileloop is used to loop through a statement as long as a condition is true
+//example
+var x=0
+while(x<10){
+     console.log("the next number is " +x+ "\n");
+     x++;
+}
+
+//the do while loop is used to check for the condition at the end of the execution of the codeblock hence its an exit controlled statement
+var i=0;
+do{
+     console.log(i);
+     i++;
+}while(x<10);
