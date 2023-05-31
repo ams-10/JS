@@ -11,3 +11,11 @@ has() "returns true if the set contains the specified value"
 forEach() "iterates over the values in the set"
 size() "returns the number of elements in the set"
 */
+const set = new Set(["apple", "banana", "cherry", "mango", "grapes"]);
+txt = "";
+set.forEach(function(value) {
+     txt+=value+"\n";
+});
+console.log(txt);
+
+console.log(set.values())
