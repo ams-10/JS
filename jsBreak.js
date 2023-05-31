@@ -18,3 +18,4 @@ for (let x of myArray){
 }
 
 //the break and continue statements are the only statements which can be used to jump out of a code block
+//iterating simply stands for looping over an object 
