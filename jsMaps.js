@@ -12,6 +12,15 @@ const fruits = new Map([
 fruits.set("orange", 150);
 fruits.set("mango", 750);
 
+//the size method is used to get the size of the map object
+fruits.size;
+
+//the delete method is used to delete an element 
+fruits.delete("mango");
+
+//the has method is used to check if an element is present in the collection
+fruits.has("mango");
+
 //the get method is used to return a key with its value
 let a = fruits.get("mango");
 console.log(a);
@@ -22,5 +31,7 @@ fruits.forEach(function one(value,key){
      txt += key + " = " + value + "\n";
 });
 
+//maps are not directly iterable therefore we can use forEach method and entries() method for iterating over all objects of the collection
 console.log(txt);
+
 
