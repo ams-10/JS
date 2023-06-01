@@ -12,6 +12,9 @@ const fruits = new Map([
 fruits.set("orange", 150);
 fruits.set("mango", 750);
 
+//the get method is used to return a key with its value
+let a = fruits.get("mango");
+console.log(a);
 
 //iteratitng over all objects of a map
 var txt=""
@@ -20,3 +23,4 @@ fruits.forEach(function one(value,key){
 });
 
 console.log(txt);
+
