@@ -1,44 +1,26 @@
-// //iterating an array using functions
-// const fruits = ["apple", "banana", "grapes"];
-// console.log(fruits);
+// a regular expression in js is a sequence of characters that form a search patttern
+//example /ams/i ams is a sequence of character and i is a modifier   
+//in js modifiers are used with search methods and replace methods
+let txt = "Abdullah MS";
+let n = txt.search("MS");
+console.log(n);
 
-// let txt = "";
+//using regular expressions  with a modifier
+let text = "hello world";
+let m = txt.search(/world/i);
 
-// function iterate(value, index, array){
-//      txt += value + "\n";
-// }
+//using replace method with modifier
+let p = text.replace(/world/i, "javascript");
+console.log(p);     
 
-// fruits.forEach(iterate);
-// console.log(txt)
+//i performs case sensitive matching
+//g performs global matching (finds all matches present in the string)
+//m perform multi line matching
+//d finds digit 
+// finds white space
 
-// //when a call back function uses only the value parameter the array and index parameter can be omitted
-// //the forEach calls a function for each element in the array 
-// function iterate2(value){
-//      txt  += value + "\n";
-// }
-// console.log(txt);
-// fruits.forEach(iterate2);
-// console.log(txt);
+//the exec method is used to find out if an expression contains a specifice value and returns boolean value
+let q = /e/.test("the quick brown fox jumps over the lazy dog");
+console.log(q);
 
-//the map function is used to create a new array by performing a function on the existing array it can be used with holes in the array & it does not change the original array
-//for example lets create an array and make changes to it 
 
-// const nums = [5, 6, 8, 9, 10];
-// const nums2 = nums.map(mul2x);
-// function mul2x(value){
-//      return value*2;
-// }
-// console.log(nums2)
-
-//the filter method is used to recreate an array with array elements that pass a test
-// const Arr = [54,10,4,2,7,89,6,3,25,45,4,15,14,25,7,19,18];
-// const Arr2 = Arr.filter(grtrThen18);
-// function grtrThen18(value){ //for a call back function array and index parameter can be omitted
-//      return value >=18;
-// }
-// console.log(Arr2);
-
-//the entries method is used to create objects out of arrays
-const fruits = ["apple", "cherry", "banana", "orange"];
-const f = fruits.entries();
-console.log(f)
