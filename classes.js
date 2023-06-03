@@ -1,14 +1,13 @@
 // the js class is used to create an object and create its properties and access them 
 //this accessing of the properties is called methods
 
-
 class Dog{
      constructor(name, breed){  // constructor is invoked whenever an object is created or class is initialized
      this.name = name;          // if constructor is not defined js will initiate a default constructor   
      this.breed = breed;
      }
      display(){
-          return console.log(this.name , ":" ,\this.breed);
+          return console.log(this.name , ":" ,this.breed);
      }
 }
 
@@ -22,6 +21,6 @@ dog2.display(); // similarly for dog2
 
 //for arguments sake lets create another dog with different attributes
 
-const dog3 = new Dog("brutus", "Bull dog"); //now dog 3 is an object 
+const dog3 = new Dog("brutus", "Bull dog"); //now dog 3 is an object or an entity
 
 dog3.display(); 
