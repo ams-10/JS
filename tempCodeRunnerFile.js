@@ -1,26 +1,14 @@
-// a regular expression in js is a sequence of characters that form a search patttern
-//example /ams/i ams is a sequence of character and i is a modifier   
-//in js modifiers are used with search methods and replace methods
-let txt = "Abdullah MS";
-let n = txt.search("MS");
-console.log(n);
+//the try catch error handler in js are used to run problematic statements
+// try used to try and run a code block
+//catch statement is used to define code block to handle any error
+// finally is used to execute closing statements of a program
+// throws key word is used to throw an exception (define custom error message)
 
-//using regular expressions  with a modifier
-let text = "hello world";
-let m = txt.search(/world/i);
-
-//using replace method with modifier
-let p = text.replace(/world/i, "javascript");
-console.log(p);     
-
-//i performs case sensitive matching
-//g performs global matching (finds all matches present in the string)
-//m perform multi line matching
-//d finds digit 
-// finds white space
-
-//the exec method is used to find out if an expression contains a specifice value and returns boolean value
-let q = /e/.test("the quick brown fox jumps over the lazy dog");
-console.log(q);
-
-
+//try and catch statements come in pairs
+let x = 5, y = 0;
+try{
+     let res = x / y ;
+}
+catch(myError){
+     console.log("division by zero not possible");
+}
