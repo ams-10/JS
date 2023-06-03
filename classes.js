@@ -1,7 +1,6 @@
 // the js class is used to create an object and create its properties and access them 
 //this accessing of the properties is called methods
 
-export {Dog};
 
 class Dog{
      constructor(name, breed){  // constructor is invoked whenever an object is created or class is initialized
@@ -9,7 +8,7 @@ class Dog{
      this.breed = breed;
      }
      display(){
-          return console.log(this.name , ":" ,this.breed)
+          return console.log(this.name , ":" ,\this.breed);
      }
 }
 
