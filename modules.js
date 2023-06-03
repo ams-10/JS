@@ -2,3 +2,4 @@
 //this makes it easier to maintain a code base
 //modules are imported using the import keyword
 //let us export our class file and create a new class of cats with the same attributes and a new attribute age
+//here we will also discuss the inheritance concept
