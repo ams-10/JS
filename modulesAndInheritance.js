@@ -7,9 +7,9 @@
 import {Dog} from ".classes.js" //here we have imported theDog class 
 
 class Cat extends Dog {            //here we have inherited the methods from the dog class
-     constructor(age) {
-          this.age = age;
-     }
+
 }
 
-const cat1 = new Cat("snowbell", "persian")
+const cat1 = new Cat("snowbell", "persian");
+
+cat1.display();
