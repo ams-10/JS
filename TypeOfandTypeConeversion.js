@@ -18,3 +18,5 @@ and two data types that can contain no values
 Nan
 undefined
 */
+
+// to convert strings to number the parseInt parseFloat Number methods are used
