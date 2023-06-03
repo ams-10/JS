@@ -1,14 +1,14 @@
-//the try catch error handler in js are used to run problematic statements
-// try used to try and run a code block
-//catch statement is used to define code block to handle any error
-// finally is used to execute closing statements of a program
-// throws key word is used to throw an exception (define custom error message)
+//variable scope is the phenomenon of accessing the variable from distinct code blocks.
 
-//try and catch statements come in pairs
-let x = 5, y = 0;
-try{
-     let res = x / y ;
+//block scope : variables declared with let in a block cannot be accessed from outside the block and vice versa for variable declared with var
+{
+     let x = 20
+     console.log(x);
+     var y = 30;
 }
-catch(myError){
-     console.log("division by zero not possible");
-}
+let result1 = x + 20;
+let result2 = x + 30;
+console.log(result2);
+console.log(result1);
+
+//variables declared in a function will have local scope
