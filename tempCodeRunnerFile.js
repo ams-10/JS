@@ -1,20 +1,12 @@
-h = "javascript";
-// {
-// {
-//      let x = 20
-//      console.log(x);
-//      var y = 30;
-// }
-// let result1 = x + 20;
-// let result2 = x + 30;
-// console.log(result2);
-// console.log(result1);
-// }
+//js allows to write shorter functions
+const person = ()=>{return "hello world";}
+const multiple = (a, b)=>{return a*b;};
 
-//variables declared in a function will have local scope and can only be accessed from within the function
-function hello() {
-     let g = "world";
-     console.log("hello "+h);
-     console.log("hello "+y);
+console.log(person());
+console.log(multiple(1, 2));
+
+//arrow functions with parameters 
+const id = (val) => {
+     return "John " + val;
 }
-hello();
+console.log(id("Doe"));
