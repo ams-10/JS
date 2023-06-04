@@ -1,7 +1,7 @@
 // the js class is used to create an object and create its properties and access them 
 //this accessing of the properties is called methods
 
-export class Dog{
+class Dog{
      constructor(name, breed){  // constructor is invoked whenever an object is created or class is initialized
      this.name = name;          // if constructor is not defined js will initiate a default constructor   
      this.breed = breed;
@@ -24,3 +24,31 @@ dog2.display(); // similarly for dog2
 const dog3 = new Dog("brutus", "Bull dog"); //now dog 3 is an object or an entity
 
 dog3.display(); 
+
+class Cat extends Dog{
+     constructor(name, breed ,age){
+          super(name,breed);       //by using the super method we can access the parents constructors properties and methods
+          this.age = age
+     }
+     set breed(x){
+          this._breed = x;
+     }
+     set age(x){
+          this._age = x;
+     }
+     set name(x){
+          this._name = x;
+     }
+     show(){
+          return console.log(this.name, this.breed, this.age);
+     }
+}
+
+const cat1 = new Cat("snow", "persian", 25);
+
+cat1.show();
+
+//using getter setter we can get the property of any object individually using its instace
+
+cat1.breed("regular");
+cat1.show();

@@ -4,12 +4,7 @@
 //let us export our class file and create a new class of cats with the same attributes and a new attribute age
 //here we will also discuss the inheritance 
 
-import {Dog} from ".classes.js" //here we have imported theDog class 
+import { Dog } from ".classes.js" //here we have imported theDog class 
 
-class Cat extends Dog {            //here we have inherited the methods from the dog class
-
-}
-
-const cat1 = new Cat("snowbell", "persian");
-
-cat1.display();
+const dog4 = Dog("hero", "regular");
+dog4.display();
