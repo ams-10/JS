@@ -30,14 +30,23 @@ class Cat extends Dog{
           super(name,breed);       //by using the super method we can access the parents constructors properties and methods
           this.age = age
      }
-     set breed(x){
+     set petname(x){
+          this._name = x;
+     }
+     set petbreed(x){
           this._breed = x;
      }
-     set age(x){
+     set petage(x){
           this._age = x;
      }
-     set name(x){
-          this._name = x;
+     get petname(){
+          return this._name;
+     }
+     get petbreed(){
+          return this._breed;
+     }
+     get petage(){
+          return this._age;
      }
      show(){
           return console.log(this.name, this.breed, this.age);
@@ -50,5 +59,8 @@ cat1.show();
 
 //using getter setter we can get the property of any object individually using its instace
 
-cat1.breed("regular");
-cat1.show();
+const cat2 = new Cat("sonic");
+cat2.name = "white";
+cat2.breed = "regular";
+cat2.age = 25;
+cat2.show();
