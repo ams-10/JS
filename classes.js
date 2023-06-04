@@ -64,3 +64,6 @@ cat2.name = "white";
 cat2.breed = "regular";
 cat2.age = 25;
 cat2.show();
+
+cat1.name = "hello";
+cat1.show();
