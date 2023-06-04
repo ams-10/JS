@@ -4,11 +4,23 @@
           <title>JSON</title>
      </head>
      <body>
-          <div id="demo">
-               <p id="in_demo"></p>
-          </div>
+          <p>Example of <b>JSON</b></p>
+          <br>
+          <p id="demo"></p>
      </body>
      <script>
-          
+     var text={
+     employees:[
+          {"firstname":"John", "lastname":"Doe"},
+          {"firstname":"Harry", "lastname":"Potter"},
+          {"firstname":"Nathan", "lastname":"Drake"},
+          {"firstname":"Steve", "lastname":"Jobs"}
+     ]
+     }
+
+     //then use the js built in function JSON.parse() to convert the string elements into javascript objects
+     const obj = new JSON.parse(text);
+     //finally use it in our program
+     document.getElementById("demo").innerHTML = "the first employee is" + obj.employees[0].firstname + " " + obj.employees[0].lastname ;
      </script>
 </html>
