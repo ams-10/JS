@@ -9,14 +9,14 @@ example : from sever to client or web page */
 
 //example for json object
 
-{
-     employees:[
-          {"firstname":"John", "lastname":"Doe"},
-          {"firstname":"Harry", "lastname":"Potter"},
-          {"firstname":"Nathan", "lastname":"Drake"},
-          {"firstname":"Steve", "lastname":"Jobs"}
-     ]
-}
+// {
+//      employees:[
+//           {"firstname":"John", "lastname":"Doe"},
+//           {"firstname":"Harry", "lastname":"Potter"},
+//           {"firstname":"Nathan", "lastname":"Drake"},
+//           {"firstname":"Steve", "lastname":"Jobs"}
+//      ]
+// }
 
 /*JSON Syntax Rules
 Data is in name/value pairs
@@ -34,3 +34,9 @@ var text={
           {"firstname":"Steve", "lastname":"Jobs"}
      ]
 }
+
+//then use the js built in function JSON.parse() to convert the string elements into javascript objects
+const obj = JSON.parse(text);
+//finally use it in our program
+
+console.log(obj.employees[1].firstname)
