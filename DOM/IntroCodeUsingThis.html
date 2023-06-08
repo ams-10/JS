@@ -1,0 +1,37 @@
+<!-- when the webpage is loaded, the browser creates a document object model of the page 
+the html DOM model is constructed as a tree of objects -->
+
+<!-- the dom is a world wibe web consortium standard
+for easy words the html dom is a standard for how to get change and add or delete html elements -->
+
+<!-- in the dom all html elements are objects in which a property is a value you can add or change  -->
+<!-- whereas the method is the action to be taken on the objects or elements -->
+
+<!-- for example the innerHTML is used to change the text in html of the <p>content</p> element -->
+<!-- example -->
+<!DOCTYPE html>
+<html>
+    <head>
+          <title>innerHTML example</title>
+    </head>
+    <body>
+          <h1><p id="demo"></p></h1>
+          <button id="green" value="green">green</button>
+          <button id="red" value="red">red</button>
+          <button id="blue" value="blue">blue</button>
+    </body>
+    <script>
+          document.getElementById("demo").innerHTML = "Hello, World!"; //the text needs to be always passed as strings
+                    //the get element by id method is used to access the element of the dom
+          //you can also access the other elements using getElementsByTagName or getElementsByclassName
+
+          //now let us create a dynamic button to change the colors of the text
+          document.getElementById("red").onclick = function (){
+               document.getElementById("demo").style.color = this.value;}; //debugging is done through the console in the browser
+          document.getElementById("green").onclick = function (){
+               document.getElementById("demo").style.color = this.value;}; //debugging is done through the console
+          document.getElementById("blue").onclick = function (){
+               document.getElementById("demo").style.color = this.value;}; //debugging is done through the console if you get errors
+          
+          </script>
+</html>
