@@ -1,0 +1,25 @@
+<!-- we can find html elements by id, class, tag and css selectors and html object collectors -->
+<!-- all examples -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            findingElementsByTAG
+        </title>
+    </head>
+    <body>
+        <p id="1"></p>
+        <p class="2">myclass</p>
+        <p id="3"></p>
+        <p>hello js</p>
+        <p id="5"></p>
+    </body>
+    <script>
+        //finding html elements by tag name
+        const tag = document.getElementsByTagName("p");
+        //this function is used to store the element content within a variable
+
+        document.getElementById("1").innerHTML = "content created by selecting  id " + tag[3].innerHTML;
+        console.log(document.getElementsByClassName("2"));
+    </script>
+</html>
