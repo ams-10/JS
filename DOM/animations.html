@@ -1,0 +1,56 @@
+<!-- to illustrate how to create animations we will use a simple page -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>animations</title>
+    </head>
+    <body>
+        <div><button onclick="moveme()">click me!</button></div>
+
+        <div class="container">
+            <div class="animate" id="animate"></div>
+        </div>
+    </body>
+<style>
+    .container{
+        position:absolute;
+        width:400px;
+        height: 400px;
+        background-color: yellow;
+    }
+
+    button{
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+
+    .animate{
+        position: relative;
+        width: 50px;
+        height: 50px;
+        background-color: red;
+    }
+</style>
+<script>
+    function moveme(){
+        let id = null;
+        const elem = document.getElementById("animate");
+        let pos = 0;
+        clearInterval(id);
+        id = setInterval(frame,5);
+        function frame(){
+            if (pos == 350 ){
+                clearInterval(id);
+        }else{
+            pos++;
+            elem.style.top = pos + "px";
+            elem.style.left = pos + "px";
+        }
+    }  
+}
+</script>
+</html>
