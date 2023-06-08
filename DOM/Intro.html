@@ -16,9 +16,9 @@ for easy words the html dom is a standard for how to get change and add or delet
      </head>
      <body>
           <h1><p id="demo"></p></h1>
-          <button class="green">green</button>
-          <button class="red">red</button>
-          <button class="blue">blue</button>
+          <button id="green">green</button>
+          <button id="red">red</button>
+          <button id="blue">blue</button>
      </body>
      <script>
           document.getElementById("demo").innerHTML = "Hello, World!"; //the text needs to be always passed as strings
@@ -26,9 +26,11 @@ for easy words the html dom is a standard for how to get change and add or delet
           //you can also access the other elements using getElementsByTagName or getElementsByclassName
 
           //now let us create a dynamic button to change the colors of the text
-          document.getElementsByTagName(button).onclick = ()=>{
-               getElementsByClassName("red").style.color = "red";
-          }
-
-     </script>
+          document.getElementById("red").onclick = function (){
+               document.getElementById("demo").style.color = "red";}; //debugging is done through the console in the browser
+          document.getElementById("green").onclick = function (){
+               document.getElementById("demo").style.color = "green";}; //debugging is done through the console
+          document.getElementById("blue").onclick = function (){
+               document.getElementById("demo").style.color = "blue";}; //debugging is done through the console if you get errors
+          </script>
 </html>
